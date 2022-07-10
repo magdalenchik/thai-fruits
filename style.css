@@ -1,0 +1,166 @@
+/* Global View aka Desktop View */
+
+
+body {
+    margin: 0;
+    font-family: 'Edu TAS Beginner', cursive;
+    background-color: whitesmoke;
+    background-image: url(images/wallpaperflare.com_wallpaper.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.container{
+    background-color: #42371400;
+    min-height: 500px;
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 140px;
+    
+}
+
+
+
+.header-container{
+    background-color:rgba(0, 0, 0, 0.442);
+    min-height: 100px;
+    /* margin-bottom: 40px; */
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.25rem;
+    position: fixed;
+    width: 100%;
+    
+}
+
+.nav{
+    margin-right: auto;
+}
+
+.mybutton{
+    margin-left: 20px;
+    border: 1px solid white;
+    padding: 10px 15px;
+
+  
+}
+
+.logo{
+    padding: 40px 0;
+    color: white;
+}
+
+header{
+    max-width: 1024px;
+    /* background-color: blueviolet; */
+    min-height: 100px;
+    margin: 0 auto ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.col{
+    background-color: rgba(22, 12, 17, 0.552);
+    /* min-height: 200px; */
+    width: 30%;
+    margin-bottom: 40px;
+}
+
+.col p{
+    color: rgb(255, 231, 231);
+    font-size: 1.25rem;
+    padding: 10px 20px;
+    line-height: 1.25rem;
+    text-align: center;
+}
+
+
+.hide-desktop-only{
+    display: none;
+}
+
+
+.col img{
+    width: 100%;
+    height: auto;
+}
+
+
+.col p::first-line{
+    font-weight: 700;
+}
+
+.bold{
+    font-weight: 700;
+
+
+}
+
+
+
+
+/* Tablet View */
+@media (max-width: 768px){
+ 
+.col{
+    width: 45%;
+}
+
+.hide-desktop-only{
+    display: block;
+}
+
+
+header{
+    display: block;
+    text-align: center;
+}
+
+.header-container{
+    position: relative;
+}
+
+.container{
+    padding-top: 40px;
+}
+
+nav a {
+    display: block;
+    
+}
+
+.logo{
+    padding: 40px 0;
+}
+
+.mybutton{
+    margin-left: 0;
+}
+
+}
+
+/* Mobile View */
+@media (max-width: 400px){
+
+    .col{
+        width: 100%;
+    }
+
+
+
+.hide-mobile{
+    display: none;
+}
+
+
+}

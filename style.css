@@ -106,7 +106,15 @@ header{
 
 }
 
+/* .mob-wrapper{
+    display: none;
+    
+} */
 
+
+.mob-wrapper{
+    display: none;  
+}
 
 
 /* Tablet View */
@@ -121,10 +129,10 @@ header{
 }
 
 
-header{
+/* header{
     display: block;
     text-align: center;
-}
+} */
 
 .header-container{
     position: relative;
@@ -133,6 +141,11 @@ header{
 .container{
     padding-top: 40px;
 }
+
+nav{
+    display: none;
+}
+
 
 nav a {
     display: block;
@@ -147,6 +160,27 @@ nav a {
     margin-left: 0;
 }
 
+
+.mob-nav{
+    display: none;
+    position: absolute;
+    padding-top: 10px;
+}
+
+.mob-wrapper{
+    display: block; 
+    padding-right: 30px; 
+}
+  
+.navbutton{
+    display: block;
+    background-color: rgba(29, 9, 2, 0.636);
+    padding: 15px 30px;
+    margin-left: -70px;
+    text-align: center;
+
+}
+
 }
 
 /* Mobile View */
@@ -156,11 +190,16 @@ nav a {
         width: 100%;
     }
 
-
+ 
 
 .hide-mobile{
     display: none;
 }
 
+
+.mob-wrapper {
+    display: block;
+    
+}
 
 }
